@@ -1,0 +1,49 @@
+menu admin
+
+ Dashboard
+ Data Master
+ 	Barang
+ 	Kategori Barang
+ 	Merk
+ 	Ruangan
+ 	Komisi Jemaat
+ 	Status
+ 	User
+ 	Log
+ Konfigurasi
+
+
+Ketua UPP Perbendaharaan
+
+ Dashboard
+ Daftar Aset
+ Pengadaan Aset
+ Penghapusan Aset
+ Laporan
+ 	Pengadaan Aset
+	Peminjaman Aset
+ 	Pemeliharaan Aset
+ 	Penghapusan Aset
+ Konfigurasi
+
+Anggota UPP Perben
+
+ Dashboard
+ Data Master
+ 	Barang
+ 	Kategori Barang
+	 Merk
+ 	Ruangan
+ 	Komisi Jemaat
+ 	Daftar Aset
+ Pengadaan Aset
+	Tambah dari Jemaat
+	 Usulan Pengadaan
+ Peminjaman Aset
+ Pemeliharaan Aset
+ Penghapusan Aset
+
+Peminjam 
+
+ Dashboard
+ Peminjaman

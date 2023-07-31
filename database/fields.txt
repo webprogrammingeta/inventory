@@ -1,0 +1,10 @@
+name & id => KATEGORI
+
+	nama
+	level
+	kode
+	pass
+	tmptlhr
+	tgl
+	telp
+	almt

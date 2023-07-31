@@ -1,0 +1,84 @@
+1. Tanah (A.1.110)
+2. Tanaman (A.2.120)
+3. Gedung gereja (A.3.130)
+4. Rumah tinggal (A.4.140 - )
+5. Bangunan Lain2 (A.5.150 - )
+6. Peralatan Kantor Termasuk Laptop, Printer, dll (B.1.210 - )
+7. Sound System, Alat Audio Visual (B.2.220 - )
+8. Alat Olahraga & Kesehatan (B.3.230 - )
+9. Alat Music (kibord, Gitar, dll) (B.4.240 - )
+10. Alat Sakramen Ibadah (B.5.250 - )
+11. Alat RT (B.6.260 - )
+12. Buku Bacaan Perpustakaan (B.7.270 - )
+13. Kendaraan Bermotor (B.8.280 - )
+14. Perabot (B.9.290 - )
+15. Hewan (C.300 - )
+16. Barang Habis Pakai (D.400 - )
+APABILA jumlah barang lebih dari 1, maka ditambah setelah kode barang mulai dari angka 1 dst......(contoh 3 bh kursi : B.9.290-1, B.9.290-2, B.9.290-3)
+
+["kategori", "total", { role: "style" } ],
+["Tanah", <?= $ja; ?>, "#4E73DF"],
+["Tanaman", <?= $jb; ?>, "#1CC88A"],
+["Gedung gereja",<?= $jc; ?>, "#FF8D29"],
+["Rumah tinggal", <?= $jd; ?>, "#F24A72"],
+["Bangunan Lain2", <?= $je; ?>, "#94B49F"],
+["Peralatan Kantor Termasuk Laptop, Printer, dll", <?= $jf; ?>, "#8479E1"],
+["Sound System, Alat Audio Visual", <?= $jg; ?>, "#816797"],
+["Alat Olahraga & Kesehatan", <?= $jh; ?>, "#36B9CC"],
+["Alat Sakramen Ibadah", <?= $ji; ?>, "#4E73DF"],
+["Alat RT", <?= $jj; ?>, "#1CC88A"],
+["Buku Bacaan Perpustakaan",<?= $jk; ?>, "#FF8D29"],
+["Kendaraan Bermotor", <?= $jl; ?>, "#F24A72"],
+["Perabot", <?= $jm; ?>, "#94B49F"],
+["Hewan", <?= $jn; ?>, "#8479E1"],
+["Sound System, Alat Audio Visual", <?= $jo; ?>, "#816797"],
+["Barang Habis Pakai", <?= $jp; ?>, "#F6C23E"]
+
+$a = $koneksi->query(" SELECT * FROM tbl_barang WHERE kategori ='Tanah'");
+        $ja = $a->num_rows;
+
+        $b = $koneksi->query(" SELECT * FROM tbl_barang WHERE kategori ='Tanaman'");
+        $jb = $b->num_rows;
+
+        $c = $koneksi->query(" SELECT * FROM tbl_barang WHERE kategori =' Gedung gereja'");
+        $jc = $c->num_rows;
+
+        $d = $koneksi->query(" SELECT * FROM tbl_barang WHERE kategori ='Rumah tinggal'");
+        $jd = $d->num_rows;
+
+        $e = $koneksi->query(" SELECT * FROM tbl_barang WHERE kategori ='Bangunan Lain2'");
+        $je = $e->num_rows;
+
+        $f = $koneksi->query(" SELECT * FROM tbl_barang WHERE kategori ='Peralatan Kantor Termasuk Laptop, Printer, dll'");
+        $jf = $f->num_rows;
+
+        $g = $koneksi->query(" SELECT * FROM tbl_barang WHERE kategori ='Sound System, Alat Audio Visual'");
+        $jg = $g->num_rows;
+
+        $h = $koneksi->query(" SELECT * FROM tbl_barang WHERE kategori ='Alat Olahraga & Kesehatan'");
+        $jh = $h->num_rows;
+
+        $i = $koneksi->query(" SELECT * FROM tbl_barang WHERE kategori ='Alat Music (kibord, Gitar, dll)'");
+        $ji = $i->num_rows;
+        
+        $j = $koneksi->query(" SELECT * FROM tbl_barang WHERE kategori ='Alat Sakramen Ibadah'");
+        $jj = $j->num_rows;
+
+        $k = $koneksi->query(" SELECT * FROM tbl_barang WHERE kategori ='Alat RT'");
+        $jk = $k->num_rows;
+
+        $l = $koneksi->query(" SELECT * FROM tbl_barang WHERE kategori ='Buku Bacaan Perpustakaan'");
+        $jl = $l->num_rows;
+
+        $m = $koneksi->query(" SELECT * FROM tbl_barang WHERE kategori ='Kendaraan Bermotor'");
+        $jm = $m->num_rows;
+        
+        $n = $koneksi->query(" SELECT * FROM tbl_barang WHERE kategori ='Perabot'");
+        $jn = $n->num_rows;
+
+        $o = $koneksi->query(" SELECT * FROM tbl_barang WHERE kategori ='Hewan'");
+        $jo = $o->num_rows;
+
+        $p = $koneksi->query(" SELECT * FROM tbl_barang WHERE kategori ='Barang Habis Pakai'");
+        $jp = $p->num_rows;
+

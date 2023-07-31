@@ -1,0 +1,118 @@
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Input Data Peserta</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">×</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="needs-validation" method="POST" action="" autocomplete="off" enctype="multipart/form-data">
+                       <div class="row">
+
+              <div class="col-md-6 mb-3">
+                <label>No Pendaftaran</label>
+                <input type="text" class="form-control" name="noreg" id="noreg" placeholder="" value="<?=$noregbaru; ?>" readonly>
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label>Nama Lengkap</label>
+                <input type="text" class="form-control" name="Nlengkap" id="Nlengkap" placeholder="Massukan Nama Lengkap" value="" required="">
+              </div>
+
+               <div class="col-md-6 mb-3">
+                <label>NISN</label>
+                <input type="number" class="form-control" name="nisn" id="nisn" placeholder="Massukan NISN" value="" required="">
+              </div>
+
+               <div class="col-md-6 mb-3">
+                <label>NIK</label>
+                <input type="number" class="form-control" name="nik" id="nik" placeholder="Massukan NIK" value="" required="">
+              </div>
+
+             <div class="col-md-6 mb-3">
+                <label>Tempat Lahir</label>
+                <input type="text" class="form-control" name="Tempatlahir" id="Tempatlahir" placeholder="Massukan Tempat Lahir" value="" required="">
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label>Tanggal Lahir</label>
+                <div class="input-group">
+                  <input type="date" class="form-control" name="Tglahir" id="Tglahir" placeholder="Tempat Lahir" required="">
+                </div>
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label>Jenis Kelamin</label>
+                <select class="custom-select d-block w-100" name="jekel" id="jekel" required="">
+                  <option value="">pilih jenis kelamin</option>
+                  <option value="laki-laki">Laki - Laki</option>
+                  <option value="perempuan">Perempuan</option>
+                </select>
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label>Agama</label>
+                <select class="custom-select d-block w-100" name="agama" id="agama" required="">
+                  <option value="">pilih agama</option>
+                  <option value="Kristen">Kristen</option>
+                  <option value="Katolik">Katolik</option>
+                  <option value="Islam">Islam</option>
+                  <option value="Konghucu">Konghucu</option>
+                  <option value="Hindu">Hindu</option>
+                  <option value="Budha">Budha</option>
+                </select>
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label>Alamat</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" name="alamat" id="alamat" placeholder="Alamat" required="">
+                </div>
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label>No Handpone</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" name="nohp" id="nohp" placeholder="No Handpone" required="">
+                </div>
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label>Asal sekolah </label>
+                <div class="input-group">
+                  <input type="text" class="form-control" name="asalsekolah" id="asalsekolah" placeholder="Asal sekolah" required="">
+                </div>
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label>Foto</label>
+                <div class="input-group">
+                  <input type="file" class="form-control" name="image" id="image"required="">
+                </div>
+              </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-3 mb-3">
+                      <!-- <label>Level</label> -->
+                      <input type="hidden" class="form-control" name="level" id="level"  value="peserta">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                      <!-- <label>Tanggal Pendaftaran</label> -->
+                      <input type="hidden" class="form-control" name="tgldaftar" id="tgldaftar" value="<?=$Tdaftar; ?>" required="">
+                    </div>
+                  </div>
+                  </div>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <button type="submit"  name="submit" class="btn btn-primary">Simpan</button>
+                  </div>
+                   </div>
+                  </div>
+                 </form>
+                </div>
+             
+              </div>

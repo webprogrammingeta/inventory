@@ -1,0 +1,64 @@
+
+
+
+TABEL USULAN PENGHAPUSAN
+
+id	
+kd_usulan_penghapusan	
+kode_barang	
+keterangan_usulan	
+status_usulan_penghapusan
+
+KODE UPH20230602001
+
+
+TABEL PENGHPUSAN
+
+id
+id_penghapusan
+kd_barang
+keterangan_usulan
+status_usulan
+tanggal_disetujui`
+
+#	Nama	Jenis		Tipedata	Bawaan		
+
+1	id 			Utama	int(11)		AUTO_INCREMENT
+2	id_penghapusan		varchar(50)			
+3	kd_barang			varchar(25)	
+4	keterangan_usulan	varchar(50)	
+5	status_usulan	    varchar(50)	
+6	tanggal_disetujui	datetime
+
+
+
+tbl_usulan_pemeliharaan [KODE UPM20230602001]
+
+`id`,
+`id_pemeliharaan`,
+`kd_barang`,
+`nama_barang`,
+`keterangan_pemeliharaan`,
+`interval`,
+`periode`,
+`biaya`,
+`tanggal_usulan`,
+`gambar`
+`status_usulan`
+
+
+tbl_pemeliharaan
+
+id
+id_pemeliharaan
+kd_barang
+nama_barang
+keterangan_pemeliharaan
+interval
+periode	
+biaya
+tanggal_disetujui
+gambar
+
+
+USULAN PENGHAPUSAN OPERATOR STATUSNYA DIGANTI Berhasil
